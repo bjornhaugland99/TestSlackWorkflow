@@ -1,0 +1,9 @@
+name: Perform Secrets checkup reminder
+description: Challenges some one on the business unit to checkup which secrets are expiring in Grafana
+runs:
+  using: node18 # Runtime Environment
+  main: ./../../scripts/secretsCheckup.js # Script to run, path is relative
+inputs:
+  slackWebHook:
+    description: "Web hook to be used to send slack messages to"
+    required: true
