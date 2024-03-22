@@ -3,12 +3,7 @@ const core = require("@actions/core")
 
 const slackMemberIds = [
     "U04NKMM86M7", //Bjørn
-    "UP77Y6KRD", //Ole-Richard
-    "U05FVADHGH0", //Kristine
-    "U04NXCMKW3X", //Valderes
-    "UD4CV34QY", //Thomas
     "UF500UCBF", //Marina
-    "U04E5TYA4", //Gunnar 
 ]
 const today = new Date()
 let slackWebHook = core.getInput("slackWebHook")
